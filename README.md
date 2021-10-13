@@ -11,9 +11,9 @@ A Movie App built on Laravel 8 where a user can search movies, marks them as fav
 ## Installation
 - Run ``composer install``  and ``npm install`` to install dependencies. 
 - Copy .env.example to .env and update database credentials and database name.
-- Get API Key from http://www.omdbapi.com/apikey.aspx and update `OMDB_KEY` with your key.
+- Get API Key from http://www.omdbapi.com/apikey.aspx and update `OMDB_KEY` with your key in .env.
 - Run ``php artisan key:generate``
-- Run ``php artisan migrate` to migrate and seed data. (Seeder will create users and clubs)
+- Run ``php artisan migrate`` to migrate.
 
 ### Usage
 - Access movie app (Eg: localhost/Movieapp/public/) and register.
@@ -29,7 +29,7 @@ A Movie App built on Laravel 8 where a user can search movies, marks them as fav
 
 ### Note
 - Searched movies will be cached for 5 minutes and will return the results from cache to improve retrieval performance.
-- If cache expired or is empty for the the movies we will get movies from API.  
+- If cache expired or is empty the movies we will fetched movies from API.  
 
 ### Tests
 Run `vendor/bin/phpunit tests/` from Movieapp directory.
